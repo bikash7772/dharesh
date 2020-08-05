@@ -1,0 +1,159 @@
+@media only screen and (max-width: 1199px){
+    .container > .row{margin: 0;}
+    .clock-inner li{padding: 40px 30px;}
+    .trainer-image figure{width: 212px;}
+    .client-image figure{width: 109px;}
+    .client-desc h4{margin-bottom: 10px;}
+    .blog-content{padding: 36px 30px;}
+    .blog-img figure{width: 470px;height: 100%;}
+    .contact-info li address,.contact-number a,.contact-number span{font-size: 18px;line-height: 25px;}
+    .contact-info li i{font-size: 20px;}
+    .contact-info li address, .contact-info li .contact-number{width: calc(100% - 40px);}
+    .contact-info{margin-bottom: 30px;}
+    .client-info{padding: 25px 25px;}
+    .reach-us address{width: calc(100% - 19px) !important;vertical-align: middle;}
+    .serivces-link{top: 72px !important;}
+    .social-icon a{margin-right: 25px;}
+    .gallery-info figure{width: 227px;}
+    .indian-product{min-height: 377px;padding: 20px 10px;}
+    .indian-product span i,.indian-product p{margin-bottom: 0;}
+    .component figure{width: 100%;height: 100%;}
+}
+
+@media only screen and (max-width: 991px){
+    .who-are-we-content {padding: 40px 0;}
+    .section-padding{padding: 30px 0;}
+    .indian-brand figure{width: 100%;height: 100%;}
+    .indian-brand{margin-bottom: 20px;}
+    .who-are-we-figure figure,.our-mission-figure figure,.our-vission-figure figure{width: 100%;}
+    .client-info{padding: 30px 30px;margin-bottom: 20px;}
+    .reviews:last-child .client-info{margin-bottom: 0;}
+    .trainer-image figure{width: 100%;}
+    .trainers-section{margin-bottom: 25px;}
+    .registration-info{margin-bottom: 60px;}
+    .clock-inner{margin-top: 40px;}
+    .course-image figure{width: 220px;height: 100%;}
+    .course-content{padding: 20px;}
+    .course-name{font-size: 13px;}
+    .meta-info{margin-top: 10px;}
+    .feature-list{padding: 20px 20px;}
+    .blog-img figure {width: 355px;padding: 80px 0;}
+    h4{line-height: 25px;font-size: 18px;}
+    h2,.registration-info h2{font-size: 32px;line-height: 34px;}
+    .features-section{padding: 60px 0;}
+    /*.main-title{margin-bottom: 30px;}*/
+    .tag{margin-bottom: 10px;}
+    .submit-btn{text-align: center;display: inline-block;float: none;}
+    .submit-btn .btn{width: auto;float: none;display: inline-block;padding: 12px 50px;}
+    .client-image figure {width: 100%;height: 100%;}   
+    .features-section,.trainer-area,.about-area,.contact-area{padding: 40px 0;}
+    .registration-area{padding: 50px 0;}
+    .popular-courses {padding-bottom: 40px;}
+    .blog-img figure{width: 100%;padding: 0;}
+    .reach-us address{width: calc(100% - 19px) !important;vertical-align: middle;}
+    .register-course,.register-form{width: 48%;}
+    .register-form{padding: 51px 51px;}
+    .register-course{padding: 54px 20px;}
+    .gallery-info figure{width: 100%;height: 145px;}
+    .gallery{padding: 40px 0 30px 0;}
+    .get-logo{padding-top: 110px;}
+}
+
+@media only screen and (max-width: 767px){
+    .who-are-we-figure figure::before,.our-mission-figure figure::before,.our-vission-figure figure::before{top: -10px;left: -10px;border-width: 5px;}
+    /* .header{background-color: #868686;} */
+    .indian-product{min-height: 100%;}
+    .indian-product span i{margin-bottom: 10px;}
+    .indian-product p{margin-bottom: 10px;}
+    .indian-product h3{margin-bottom: 5px;}
+    .banner-form input,.indian-brand figure{width: 100%;}
+    .indian-brand figure{width: 300px;height: 300px;}
+    .indian-brand figure .indian-brand{margin-bottom: 0;}
+    .indian-brand{display: flex;flex-wrap: wrap;justify-content: center;float: none;width: auto;}
+    .service-image-content{width: 300px;height: 100%;display: flex;flex-wrap: wrap;align-content: center;left: 50%;transform: translateX(-50%);}
+    .indian-product-desc .indian-product,.indian-brand-desc .indian-brand{margin-bottom: 30px;}
+    .indian-product-desc:last-child,.indian-brand-desc:last-child .indian-brand{margin-bottom: 0;}
+    .support-india-figure figure{width: 100%;padding: 0;}
+    .logo{height: 64px;}
+    .header-menu li{float: left;width: 100%;padding: 0;}
+    .feature-list,.courses-info,.trainers-section{margin-bottom: 20px !important;}
+    .trainers-section{margin-bottom: 20px;}
+    /* .trainers-section:last-child{margin-bottom: 0px;} */
+    .course-image figure{width: 100%;}
+    .price{width: 55px;height: 55px;line-height: 56px;top: -28px;}
+    .clock-inner li{padding: 20px 9px;margin-right: 10px;}
+    .counts{font-size: 12px;}
+    .client-image figure{width: 200px;height: 100%;float: none;display: inline-block;}
+    .banner-content h1{font-size: 32px;line-height: 35px;}
+    .learn-more,.see-course{padding: 10px 15px;}
+    .header-menu li{margin-right: 0;margin-bottom: 10px;}
+    .header{padding: 10px 0;}
+    .navbar-right{margin-top: 15px;width: 100%;}
+    .header-menu li a{line-height: 20px;}
+    .blog-img figure {width: 100%;padding: 0;}
+    .about-area {padding: 50px 0;}
+    /*.main-title{margin-bottom: 30px;}*/
+    /*.footer{padding: 40px 0;}*/
+    .footer h4{margin-bottom: 10px;}
+    .footer ul li{margin-bottom: 5px;}
+    .input-field{margin-bottom: 20px;}
+    .contact-info li address,.contact-number a,.contact-number span{font-size: 14px;line-height: 20px;}
+    .contact-area{padding: 60px 0;}
+    .contact-submit-btn{text-align: center;}
+    .contact-submit-btn .submit-btn{float: none;display: inline-block;width: auto;}
+    .registration-info p{font-size: 13px;}
+    .banner-content{min-height: 360px;}
+    .navbar-nav .open .dropdown-menu>li>a{line-height: 10px;}
+    .copy-right-info{margin-bottom: 5px;}
+    .copy-right-wrapper:last-child .copy-right-info{margin-bottom: 0;}
+    .copy-right{text-align: center;}
+    .copy-right p{font-size: 14px;line-height: 20px;}
+    .registration-info{margin-bottom: 30px;}
+    .submit-response{padding: 0;}
+    .register-form{padding: 30px 30px;}
+    .navbar-toggle{padding: 24px 10px}
+    .feature-list{min-height: 0;}
+    .trainer-text,.course-content{padding: 20px 25px;float: none;display: inline-block;text-align: center;width: 238px;}
+    .trainers-section,.courses-info{display: inline-block;text-align: center;float: none;padding: 20px 0;}
+    .trainer-image figure,.course-image figure {width: 235px;height: 100%;float: none;display: inline-block;}
+    .trainer-image,.course-image{float: none;display: inline-block;text-align: center;width: 100%;}
+    .course-name{text-align: left;}
+    .client-image {float: none;display: inline-block;text-align: center;}
+    .client-desc.full-width {width: 280px;float: none;display: inline-block;max-width: 100%;}
+    .client-info{text-align: center;margin-bottom: 15px;padding: 10px 0;}
+    .client-desc p{font-size: 13px;line-height: 20px;}
+    .register-course,.register-form,.register-course h3{width: 100%;}
+    .register-course{margin-bottom: 30px;}
+    .register-course{padding: 30px 20px;}
+    .register-form{padding: 30px 16px;}
+    .submit-btn,.register-form-contact-section{margin-top: 0;}
+    .banner{padding-top: 84px;}
+    .banner-content{padding: 78px 0;}
+    .images-section figure{width: 290px;float: none;display: inline-block;}
+    .images-section .images-content{left: 50%;transform: translateX(-50%);width: 290px;}
+    .margin-top{margin-top: 84px;padding: 30px 0;}
+    .address-info{margin-bottom: 50px;}
+    .contact-us h2, .contact-us h4{margin-bottom: 15px;}
+    .contact-us h4{text-align: center;}
+    .gallery-info{display: inline-block;text-align: center;float: none;}
+    .gallery-info figure{width: 290px;float: none;display: inline-block;height: 230px;}
+    .padding-bottom{padding-bottom: 10px;}
+    .images-section{height: 210px;}
+    .bottom-footer{padding: 30px 0;}
+    .auto-width1{width: 100%;padding: 40px 20px;}
+    .support-india{padding-top: 30px;}
+    .banner {min-height: 480px;}
+    .add-company .form-group{float: none;margin-right: 0;margin-bottom: 20px;}
+    .who-are-we-figure figure,.our-mission-figure figure,.our-vission-figure figure{height: 100%;}
+    .sub-title h2{text-align: left;}
+    .brand-btn{margin: 0;}
+    .inner-banner{min-height: 450px !important;}
+    .inner-banner .banner-content{padding: 63px 0 !important;display: flex;flex-wrap: wrap;align-content: center;}
+    .section-padding-bottom{padding: 0;}
+    .contact-submit-btn{margin-top: 20px;}
+    .component{text-align: center;}
+    .component figure{width: 290px;height: 200px;float: none;display: inline-block;}
+    .get-logo{padding-left: 10px;padding-right: 10px;}
+    .form-submit-btn{float: left;width: 100%;padding: 10px 40px;margin-bottom: 10px;}
+    .proceed-to-pay{float: left;width: 100%;padding: 10px 40px;}
+}

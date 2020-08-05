@@ -1,0 +1,229 @@
+/*RESET CSS START*/
+    ul{list-style-type: none;padding: 0;margin: 0;text-decoration: none;}
+    a{text-decoration: none;}
+    h1,h2,h3,h5,h6,body,p,input,span,form,header,figure,label,strong,bold{margin: 0;font-weight: normal;}
+    *{box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;-moz-box-sizing: border-box;}
+    img{max-width: 100%;}
+    body{font-family: 'Signika Negative', sans-serif;font-family: 'Permanent Marker', cursive;}
+    ::-webkit-input-placeholder {opacity: 1; } ::-moz-placeholder {opacity: 1; } :-ms-input-placeholder {opacity: 1; } :-moz-placeholder {opacity: 1;}
+    ::-webkit-input-placeholder {color: #555;} ::-moz-placeholder {color: #555;} :-ms-input-placeholder {color: #555;} :-moz-placeholder {color: #555;}
+    ::-webkit-textarea-placeholder{font-size: 18px;}
+    .search-box input[type="search"]::-webkit-input-placeholder{font-size: 20px;color: #fff;}
+    .search-box input[type="search"]::-moz-placeholder{font-size: 20px;color: #fff;}
+    address{font-style: normal;}
+    select {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+    option {font-weight: normal; display: block; white-space: pre; min-height: 1.2em; padding: 0px 2px 1px; }
+    .nav>li>a:focus, .nav>li>a:hover{background-color: #fff;}
+    .navbar-collapse{border: none !important;box-shadow: none !important;}
+    :focus {outline: none;}
+    .form-control:focus{box-shadow: none;}
+    a:hover{text-decoration: none;}
+    address{margin-bottom: 0;}
+    .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{background-color: transparent;}
+    .btn.focus, .btn:focus, .btn:hover {color: #fff;text-decoration: none;border-color: transparent;}
+    .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{outline: none;}
+    a:focus{outline: none;outline-offset: 0;}
+    a:focus, a:hover{text-decoration: none;}
+    .section-padding-bottom{padding-bottom: 70px;}
+/*RESET CSS END*/
+
+/* COMMON CSS START */
+    .full-width{float: left;width: 100%;}
+    .auto-width{float: left;}
+    h1,h2,h3,h4,h5,h6,p{float: left;width: 100%;}
+    .header-menu li a,.learn-more,.see-course,.box-shadow1,.courses-info,.price,.course-name,.submit-btn .btn,.learn-more-btn,.learn-more-btn i,.tag,.modal-btn,.footer ul li a,.footer ul li address, .footer ul li .contact,.footer ul li i,.proceed-btn .btn,.indian-brand-desc .indian-brand .service-image-content,.indian-brand,.service-image-content,.indian-brand-desc .indian-brand:hover .service-image-content,.indian-brand-desc .indian-brand:hover figure img,.footer ul li a,.footer ul li address, .footer ul li .contact,.footer ul li i,.auto-width1 i,.auto-width1 h4,.auto-width1,.brand-btn a,.indian-product-btn,.add-company button,.form-submit-btn,.proceed-to-pay{transition: all 0.4s ease-in-out;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;-ms-transition: all 0.4s ease-in-out;}
+    .fixed{position: fixed;z-index: 111;}
+    .bg-white{background-color: #fff;}
+    .box-shadow{-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);}
+    .text-capitalize{text-transform: uppercase;}
+    h1{font-size: 47px;line-height: 55px;margin-bottom: 30px;color: #fff;font-weight: 800;font-family: 'Signika Negative', sans-serif;}
+    p{color: #7b838a;font-size: 16px;line-height: 25px;font-weight: 400;font-family: 'Signika Negative', sans-serif;}
+    h2{color: #002347;font-size: 36px;line-height: 40px;margin-bottom: 10px;font-weight: 800;font-family: 'Signika Negative', sans-serif;}
+    h4{font-size: 20px;line-height: 30px;margin: 0;color: #002347;font-weight: 600;font-family: 'Signika Negative', sans-serif;}
+    h3{font-weight: 800;color: #002347;font-size: 24px;line-height: 30px;margin-bottom: 15px;font-family: 'Signika Negative', sans-serif;}
+    .main-title{text-align: center;margin-bottom: 20px;}
+    ::selection,-moz-selection,-webkit-selection,-ms-selection,-moz-selection,-o-selection{background-color: #002347;color: #fdc632;}
+    .form-control:focus{border-color: #ccc;}
+    .center{text-align: center;}
+    .box-shadow1{-moz-box-shadow: rgba(0, 0,0, 0.8) 12px 4px 10px 4px;-webkit-box-shadow: rgba(0, 0,0, 0.8) 12px 4px 10px 4px;box-shadow: rgba(0, 0,0, 0.8) 12px 4px 10px 4px;}
+    .submit-btn{transition: all 0.4s ease-in-out;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;-ms-transition: all 0.4s ease-in-out;}
+    .mb-10{margin-bottom: 10px;}
+    .center{text-align: center;}
+    .section-padding{padding: 70px 0;}
+    .box-shadow1{-webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.9);-moz-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.9);box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.9);}
+    h3{position: relative;padding-bottom: 5px;}
+    h3::after{position: absolute;content: '';left: 0;bottom: 0;border: 1px solid #000;display: inline-block;width: 50px;}
+    .sub-title{margin-bottom: 20px;}
+    .sub-title h2{position: relative;padding-bottom: 5px;width: auto;float: none;display: inline-block;}
+    .sub-title h2::after{position: absolute;content: '';left: 0;bottom: 0;border: 1px solid #000;display: inline-block;width: 50px;}
+    .inner-banner{min-height: 500px !important;}
+    .inner-banner .banner-content{padding: 130px 0 !important;}
+    .inner-banner .banner-content h1{color: #002347 !important;}
+    .inner-banner .banner-content p{margin-bottom: 0 !important;}
+/* COMMON CSS END */
+
+/* HEADER CSS START */
+    .header{padding: 8px 0;}
+    .navbar-nav>li>a,.navbar-brand{padding: 0;}
+    .navbar-brand{height: 18px;}
+    .search-here img{width: 18px;height: 18px;float: left;}
+    .header-menu li{float: left;margin-right: 40px;padding: 21px 0;}
+    .header-menu li:last-child{margin-right: 0;}
+    .header-menu li a{float: left;width: 100%;font-size: 15px;line-height: 23px;color: #002347;font-weight: 800;font-family: 'Signika Negative', sans-serif;}
+    .header-menu li a:hover{color: #fdc632;}
+    .navbar-toggle .icon-bar{background-color: #fdc632;}
+    .navbar-toggle,.navbar-nav{margin: 0 !important;}
+    .header .form-control{border: none;box-shadow: none;background-color: transparent;color: #fff;}
+    .header .form-group{margin-bottom: 0;display: flex;flex-wrap: wrap;width: 90%;margin-right: 50px;}
+    .header-form{display: none;position: relative;top: 0;}
+    #close_search{color: #fff;font-weight: 600;cursor: pointer;padding: 10px 0;display: flex;flex-wrap: wrap;}
+    .search-input{background-color: #fdc632;}
+    .search-field{display: flex;flex-wrap: wrap;padding: 10px 0;}
+    .logo{color: #002347;float: left;height: 64px;width: 215px;font-size: 40px;line-height: 66px;}
+    .logo img{float: left;width: 60px;height: 100%;}
+    .logo span{float: left;font-size: 35px;font-family: 'Permanent Marker', cursive;font-weight: 400;line-height: 64px;color: #ff9800;}
+    .serivces-link{top: 73px !important;right: -80px !important;border: none !important;padding: 10px 0;border-radius: 0;}
+    .serivces-link li{margin-right: 0;width: 100%;margin-bottom: 10px;padding: 0;}
+    .serivces-link li:last-child{margin-bottom: 0;}
+    .serivces-link li a{line-height: 20px;}
+    .dropdown i{margin-left: 6px;font-size: 12px;}
+    .search-here{margin-top: 10px;}
+    /* .navbar-toggle{padding: 0;} */
+/* HEADER CSS END */
+
+/* BANNER CSS START */
+    .banner{position: relative;width: 100%;padding-top: 80px;min-height: 580px;}
+    .banner figure {float: left;width: 100%;position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;width: 100%;height: 100%;object-fit: cover;}
+    .banner figure img {width: 100%;height: 100%;object-fit: cover;}
+    .banner-content{width: 100%;position: relative;text-align: center;padding: 167px 0;}
+    .banner-content h1{font-size: 47px;line-height: 55px;margin-bottom: 10px;color: #fff;font-weight: 700;}
+    .banner-content p{font-size: 20px;line-height: 30px;color:#002347;margin-bottom: 14px;font-weight: 600;}
+    .banner-content{width: 800px;max-width: 100%;float: none;display: inline-block;}
+    .banner-form .form-group{position: relative;float: left;width: 100%;}
+    .banner-form .form-group i{position: absolute;left: 0;top: 15px;padding: 0 20px;}
+    .banner-form input{border: none;border-radius: 25px;height: 40px;padding: 10px 50px;width: 500px;font-family: 'Signika Negative', sans-serif}
+    .banner-form{float: none;display: inline-block;}
+    .add-company .form-group{width: auto;margin-right: 30px;margin-bottom: 0;}
+    .add-company input{width: 100%;border-radius: 0;border: none;background-color: transparent;box-shadow: none;border-bottom: 1px solid #fff;padding: 10px 20px;}
+    .add-company button{border: none;border-radius: 25px;padding: 10px 60px;font-family: 'Signika Negative', sans-serif;font-weight: 400;}
+    input[type="search"].add::-webkit-input-placeholder {color: #fff;}
+    .add-company i{color: #fff;}
+    span{font-family: 'Signika Negative', sans-serif;}
+    .add-company button:hover{color: #000;background-color: #fff;}
+/* BANNER CSS END */
+
+/*SUPPORT INDIA CSS START*/
+    .auto-width1{float: left;width: 20%;padding: 60px 20px;background-color: #2fc4b2;max-width: 100%;}
+    .support-india-desc-figure{margin-bottom: 10px;}
+    .auto-width1 i,.auto-width1 h4{color: #fff;}
+    .auto-width1:hover{background-color: #fff;}
+    .auto-width1:hover i,.auto-width1:hover h4{color: #2fc4b2;}
+    .support-india-desc-figure i{font-size: 50px;line-height: 55px;}
+/*SUPPORT INDIA CSS END*/
+
+/*INDIAN PRODUCT DESC CSS START*/
+    .gray-border{border: 1px solid rgba(0, 0, 0, 0.1);}
+    .indian-product{padding: 30px 41px;min-height: 348px;display: flex;flex-wrap: wrap;}
+    .get-info-btn{display: flex;flex-wrap: wrap;align-content: flex-end;justify-content: center;}
+    .indian-product h3{padding: 0;}
+    .indian-product span i{margin-bottom: 20px;font-size: 45px;line-height: 50px;}
+    .indian-product p{margin-bottom: 20px;}
+    .indian-product-btn{padding: 10px 20px;border-radius: 0;font-family: 'Signika Negative', sans-serif;font-weight: 400;}
+    .indian-product h3::after{display: none;}
+    .indian-product-btn:hover{background-color: #ff9800;color: #fff;border-color: transparent;}
+/*INDIAN PRODUCT DESC CSS END*/
+
+/*WHO ARE WE CSS START*/
+    .who-are-we-figure figure,.our-mission-figure figure,.our-vission-figure figure,.top-story-figure figure{float: right;width: 545px;height: 400px;position: relative;}
+    .who-are-we-figure figure::before,.our-mission-figure figure::before,.our-vission-figure figure::before,.top-story-figure figure::before{content: '';position: absolute;width: 100%;height: 100%;border: 10px solid #5f67c7;display: inline-block;left: -25px;top: -25px;}
+    .who-are-we-figure figure img,.our-mission-figure figure img,.our-vission-figure figure img,.top-story-figure figure img{float: left;width: 100%;height: 100%;position: relative;z-index: 1;}
+    /*.who-are-we-content p{margin-bottom: 15px;}*/
+    .who-are-we-content{padding: 147px 0;}
+    .who-are-we-figure,.our-mission-figure,.our-vission-figure,.top-story-figure{margin-top: 27px;}
+    .who-are-we-content h3,.our-mission-figure h3,.our-vission-figure h3,.top-story-figure h3{margin-bottom: 25px;}
+/*WHO ARE WE CSS END*/
+
+/*BRAND CSS START*/
+    .brand-btn{margin-top: 20px;}
+    .brand-btn a{padding: 10px 30px;border-radius: 0;font-family: 'Signika Negative', sans-serif;font-weight: 400;background-image: -webkit-linear-gradient(47deg,#ef4559 0,#ee8219 100%);background-image: -ms-linear-gradient(47deg,#ef4559 0,#ee8219 100%);box-shadow: 0 10px 29px 2px rgba(239,139,117,0.8);transition: all .4s;color: #fff;border: none;border-radius: 25px;padding: 14px 40px;}
+    .brand-btn a:hover{background-image: -webkit-linear-gradient(94deg, #ee8219 0,#ef4559 100%);background-image: -moz-linear-gradient(94deg, #ee8219 0,#ef4559 100%);background-image: -ms-linear-gradient(94deg, #ee8219 0,#ef4559 100%);box-shadow: 0 10px 29px 2px rgba(239,139,117,0.8);transition: all .4s;}
+    .indian-brand figure{float: left;width: 270px;height: 249px;max-width: 100%;}
+    .indian-brand figure img{float: left;width: 100%;height: 100%;}
+    .indian-brand{position: relative;}
+    .indian-brand-desc .indian-brand:hover .service-image-content{opacity: 1;}
+    .indian-brand-desc .indian-brand:hover figure img{opacity: 0;}
+    .service-image{position: relative;display: inline-block;width: 470px;height: 351px;}
+    .service-image figure{display: inline-block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+    .service-image figure img{float: left;width: 100%;height: 100%;}
+    .service-image figure::after{content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: -moz-linear-gradient(to bottom,rgba(238,69,49,.15) 0%,rgba(238,69,49,.8) 100%);background: -webkit-linear-gradient(to bottom,rgba(238,69,49,.15) 0%,rgba(238,69,49,.8) 100%);background: linear-gradient(to bottom,rgba(238,69,49,.15) 0%,rgba(238,69,49,.8) 100%);}
+    .service-image-content{position: absolute;left: 0;padding: 20px 27px;width: 100%;opacity: 0;background-color: #F65C00;height: 100%;}
+    .service-image-content h3,.service-image-content p{color: #fff;float: left;width: 100%;}
+    .service-image-content h3::after{display: none;}
+/*BRAND CSS END*/
+
+/*FOOTER CSS START*/
+    .top-footer{background-color: #F65C00;}
+    .top-footer h2{margin-bottom: 0;color: #fff;padding: 15px 0;}
+    .bottom-footer{background-color: #002347;padding: 80px 0;}
+    .bottom-footer h4{color: #fff;margin-bottom: 20px;}
+    .bottom-footer ul{display: inline-block;vertical-align: middle;float: none;padding: 0;}
+    .bottom-footer ul li{display: inline-block;width: 100%;margin-bottom: 10px;}
+    .bottom-footer ul li a{width: 100%;}
+    .bottom-footer ul li a,.reach-us{color: #7b838a;}
+    .bottom-footer ul li a:hover,.reach-us:hover{color: #fdc632;}
+    .reach-us address{width: calc(100% - 65px) !important;padding-left: 10px;display: inline-block;color: #fff;}
+    .contact{width: calc(100% - 148px) !important;}
+    .social-icon a{margin-right: 50px;}
+    .social-icon a:last-child{margin-right: 0;}
+    .reach-us span{float: left;width: 100%;}
+    .reach-us{display: inline-block;vertical-align: middle;float: none;width: auto;}
+    .email.contact{display: inline-block;width: auto !important;}
+    .reach-us:hover i,.reach-us:hover a{color: #fdc632;}
+    .reach-us:hover span{color: #7b838a;}
+    .reach-us a{padding-left: 10px;font-family: 'Signika Negative', sans-serif;font-weight: 400;color: #fff;}
+    .copy-right{padding: 20px 0;}
+    .copy-right p{color: #002347;font-size: 15px;line-height: 20px;}
+    .footer-info{margin-bottom: 20px;}
+/*FOOTER CSS END*/
+
+/*CONTACT PAGE CSS START*/
+    .input-field .form-group .form-control{font-family: 'Signika Negative', sans-serif;font-weight: 400;}
+    .contact-submit-btn .btn{font-family: 'Signika Negative', sans-serif;font-weight: 400;background-image: -webkit-linear-gradient(47deg,#ef4559 0,#ee8219 100%);background-image: -ms-linear-gradient(47deg,#ef4559 0,#ee8219 100%);box-shadow: 0 10px 29px 2px rgba(239,139,117,0.8);transition: all .4s;color: #fff;border: none;border-radius: 25px;padding: 14px 80px;}
+    .contact-submit-btn .btn:hover{background-image: -webkit-linear-gradient(94deg, #ee8219 0,#ef4559 100%);background-image: -moz-linear-gradient(94deg, #ee8219 0,#ef4559 100%);background-image: -ms-linear-gradient(94deg, #ee8219 0,#ef4559 100%);box-shadow: 0 10px 29px 2px rgba(239,139,117,0.8);transition: all .4s;}
+    .contact-submit-btn{text-align: center;}
+    .input-field .form-control{border-radius: 0;height: 34px;padding: 6px 12px;border: 1px solid #ccc;box-shadow: none;}
+    .input-field .form-group{margin-bottom: 15px;}
+    textarea.form-control{height: 132px;border-radius: 0;resize: none;box-shadow: none;}
+/*CONTACT PAGE CSS END*/
+
+/*AIM PAGE CSS START*/
+    .background-dark.aim-page{background-color: #002633;padding-top: 80px;}
+    .aim-page .aim-content p{color: #fff;}
+/*AIM PAGE CSS END*/
+
+/*ELECTRONICS PAGE CSS END*/
+    .component figure{width: 369px;float: left;height: 231px;}
+    .component figure img{float: left;width: 100%;height: 100%;}
+    .component{margin-bottom: 20px;}
+/*ELECTRONICS PAGE CSS END*/
+
+/*ABOUT PAGE CSS START*/
+    .our-mission-content, .our-vission-content{padding: 127px 0;}
+/*ABOUT PAGE CSS END*/
+
+/*GALLERY PAGE CSS START*/
+    .top-story-content{padding: 151px 0;}
+    .our-story-section{margin-bottom: 20px;}
+    .top-story{padding-top: 110px;}
+/*GALLERY PAGE CSS END*/
+
+/*GET LOGO PAGE CSS START*/
+    .get-logo{float: none;display: inline-block;padding-top: 140px;}
+    .auto-width2{width: 500px;max-width: 100%;float: none;display: inline-block;}
+    .get-logo-form .form-group{float: left;width: 100%;}
+    .get-logo-form .form-group input{float: left;width: 100%;border-radius: 0;}
+    .get-logo-form .form-group .form-control,.form-submit-btn,.proceed-to-pay,.input-file{font-family: 'Signika Negative', sans-serif;font-weight: 400;}
+    .form-submit-btn{float: left;border-radius: 25px;padding: 14px 70px;background-image: -webkit-linear-gradient(47deg,#ef4559 0,#ee8219 100%);box-shadow: 0 10px 29px 2px rgba(16, 7, 5, 0.8);transition: all .4s;color: #fff;border: none;}
+    .proceed-to-pay{float: right;border-radius: 25px;padding: 14px 70px;background-image: -webkit-linear-gradient(47deg,#ef4559 0,#ee8219 100%);box-shadow: 0 10px 29px 2px rgba(16, 7, 5, 0.8);transition: all .4s;color: #fff;border: none;}
+    .form-submit-btn:hover.proceed-to-pay:hover{background-image: -webkit-linear-gradient(94deg, #ee8219 0,#ef4559 100%);box-shadow: 0 10px 29px 2px rgba(239,139,117,0.8);transition: all .4s;}
+/*GET LOGO PAGE CSS END*/
