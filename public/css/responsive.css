@@ -156,4 +156,7 @@
     .get-logo{padding-left: 10px;padding-right: 10px;}
     .form-submit-btn{float: left;width: 100%;padding: 10px 40px;margin-bottom: 10px;}
     .proceed-to-pay{float: left;width: 100%;padding: 10px 40px;}
+    .support-view{display: block;}
+    .support-india{display: none;}
+    
 }

@@ -57,7 +57,9 @@
     .sub-title h2{position: relative;padding-bottom: 5px;width: auto;float: none;display: inline-block;}
     .sub-title h2::after{position: absolute;content: '';left: 0;bottom: 0;border: 1px solid #000;display: inline-block;width: 50px;}
     .inner-banner{min-height: 500px !important;}
-    .inner-banner .banner-content{padding: 130px 0 !important;}
+    .inner-banner .banner-content{padding: 130px 0 !important;    width: 50%;
+    float: left;
+    text-align: left;}
     .inner-banner .banner-content h1{color: #002347 !important;}
     .inner-banner .banner-content p{margin-bottom: 0 !important;}
 /* COMMON CSS END */
@@ -101,7 +103,7 @@
     .banner-content{width: 800px;max-width: 100%;float: none;display: inline-block;}
     .banner-form .form-group{position: relative;float: left;width: 100%;}
     .banner-form .form-group i{position: absolute;left: 0;top: 15px;padding: 0 20px;}
-    .banner-form input{border: none;border-radius: 25px;height: 40px;padding: 10px 50px;width: 500px;font-family: 'Signika Negative', sans-serif}
+    .banner-form input{border: none;border-radius: 25px;height: 40px;padding: 10px 50px;width: 350px;font-family: 'Signika Negative', sans-serif}
     .banner-form{float: none;display: inline-block;}
     .add-company .form-group{width: auto;margin-right: 30px;margin-bottom: 0;}
     .add-company input{width: 100%;border-radius: 0;border: none;background-color: transparent;box-shadow: none;border-bottom: 1px solid #fff;padding: 10px 20px;}
@@ -227,3 +229,10 @@
     .proceed-to-pay{float: right;border-radius: 25px;padding: 14px 70px;background-image: -webkit-linear-gradient(47deg,#ef4559 0,#ee8219 100%);box-shadow: 0 10px 29px 2px rgba(16, 7, 5, 0.8);transition: all .4s;color: #fff;border: none;}
     .form-submit-btn:hover.proceed-to-pay:hover{background-image: -webkit-linear-gradient(94deg, #ee8219 0,#ef4559 100%);box-shadow: 0 10px 29px 2px rgba(239,139,117,0.8);transition: all .4s;}
 /*GET LOGO PAGE CSS END*/
+
+
+
+/*SUPPORT VIEW MOBILE CSS START*/
+    .support-view{display: none;padding-top: 30px;}
+    .owl-nav,.owl-dots{display: none;}
+/*SUPPORT VIEW CSS END*/

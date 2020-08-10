@@ -23,10 +23,8 @@ const About = () => {
             <div className='banner-content'>
               <h1 className='text-uppercase text-shadow'>About Us</h1>
               <p>
-                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                molestie consequat, vel illum dolore eu feugiat nulla facilisis. Lorem
-                ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                euismod.
+                Purchasing locally produced goods is benefecial to the economy as long as
+                we also export what we produce apart from the domestic consumption.
               </p>
             </div>
           </div>
@@ -68,12 +66,10 @@ const About = () => {
                 <div className='full-width our-vission-content'>
                   <h3>Our vission</h3>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic typesetting,
-                    remaining essentially unchanged.
+                    The money you pay for buying the product goes to the producers.If this
+                    producer happens to be indian, the more he earns the more he pays
+                    taxes to the government.So Government would have more money to spend
+                    on the country's development.
                   </p>
                 </div>
               </div>

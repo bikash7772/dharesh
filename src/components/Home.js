@@ -3,34 +3,70 @@ import { Link } from "react-router-dom";
 import banner from "../assets/images/image5.jpg";
 import commingsoon from "../assets/images/comingsoon.PNG";
 import img02 from "../assets/images/img-02.jpg";
+import loading from "../assets/images/Rolling-1.9s-197px.svg";
 let arr = [];
 const Home = () => {
+  const [track, setTrack] = React.useState(1);
+  const [suggestmore, setSuggestmore] = React.useState("");
   const [data, setData] = React.useState("");
   const [value, setValue] = React.useState("");
   const [searchvalue, setSearchvalue] = React.useState("");
-  const url = "https://company-details.herokuapp.com/api/getData";
+  const [suggest, setSuggest] = React.useState("");
+  const [name, setname] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const url = "https://company-details.herokuapp.com";
   const submit = () => {
-    fetch(url, {
-      method: "get",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((companyData) => {
-        if (companyData) {
-          setData(companyData.data);
-          search();
-        }
+    if (!searchvalue) {
+      alert("Filed Cannot be empty  ");
+    } else {
+      fetch(url + "/api/getData", {
+        method: "get",
+        headers: {
+          "Content-Type": "application/json",
+        },
       })
-      .catch((err) => {});
+        .then((res) => res.json())
+        .then((companyData) => {
+          if (companyData) {
+            setData(companyData.data);
+            search();
+          }
+        })
+        .catch((err) => {});
+    }
   };
 
   const search = () => {
     if (!searchvalue) {
-      alert("empty");
       arr = [];
     } else {
+      arr = [];
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
       data.map((item) => {
         if (item.companyName.toLowerCase() == searchvalue.toLocaleLowerCase()) {
           setValue(item.companyName);
@@ -40,14 +76,82 @@ const Home = () => {
         }
       });
       if (!value) {
-        alert("non-indian company  /n" + "looking for" + arr);
+        if (arr[0]) {
+          document.getElementById("val").innerHTML = arr[0];
+
+          if (arr[1]) {
+            document.getElementById("val2").innerHTML = arr[1];
+          } else {
+            document.getElementById("val2").innerHTML = "";
+          }
+        } else {
+          document.getElementById("val").innerHTML = "";
+          document.getElementById("val2").innerHTML = "";
+        }
+        arr = [];
       } else {
-        alert(value);
+        document.getElementById("val3").innerHTML = value;
         arr = [];
       }
     }
   };
+
+  const suggestCompany = () => {
+    if (!suggest || !name || !email) {
+      setSuggestmore("");
+      alert("Field Cannot be Empty");
+    } else {
+      setTrack(0);
+      let myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+
+      let raw = JSON.stringify({ CompanyName: suggest, name: name, mail: email });
+
+      let requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow",
+      };
+
+      fetch(url + "/api/sendmail", requestOptions)
+        .then((response) => response.text())
+        .then((result) => {
+          setSuggestmore("Thank You , Suggest More...");
+          setTrack(1);
+          setSuggest("");
+          setEmail("");
+          setname("");
+        })
+        .catch((error) => setTrack(1));
+    }
+  };
+
   React.useEffect(() => {
+    var modal2 = document.getElementById("myModal2");
+
+    // Get the button that opens the modal
+    var btn2 = document.getElementById("myBtn2");
+
+    // Get the <span> element that closes the modal
+    var span2 = document.getElementsByClassName("close2")[0];
+
+    // When the user clicks on the button, open the modal
+    btn2.onclick = function () {
+      modal2.style.display = "block";
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    span2.onclick = function () {
+      modal2.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    };
     window.scrollTo({
       top: 0,
       left: 0,
@@ -57,6 +161,81 @@ const Home = () => {
 
   return (
     <React.Fragment>
+      <div id='myModal' className='modal'>
+        <div className='modal-content'>
+          <span className='close'>&times;</span>
+          <div>
+            {!value ? (
+              "Non Indian Company   "
+            ) : (
+              <div>
+                <span id='val3'></span>
+              </div>
+            )}
+            <br />
+            <br />
+
+            {!arr ? (
+              "Loading"
+            ) : (
+              <div>
+                Loking For{"       "}
+                <span id='val'></span>
+                <span id='val2'></span>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+      <div id='myModal2' className='modal'>
+        <div className='modal-content'>
+          <span className='close2'>&times;</span>
+          <div className='suggestform'>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                suggestCompany();
+              }}>
+              <input
+                className='inputfield'
+                type='text'
+                placeholder='Your Name'
+                value={name}
+                onChange={(e) => setname(e.target.value)}
+              />
+              <input
+                className='inputfield'
+                type='text'
+                placeholder='Company Name'
+                value={suggest}
+                onChange={(e) => setSuggest(e.target.value)}
+              />
+              <input
+                className='inputfield'
+                type='text'
+                placeholder='Email Id'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <button type='submit' className='submit-btn'>
+                Submit
+              </button>
+              {track ? (
+                ""
+              ) : (
+                <div className='loading'>
+                  <img
+                    src={loading}
+                    alt='loading'
+                    style={{ width: "100px", height: "50px" }}
+                  />
+                </div>
+              )}
+            </form>
+            <h5 id='suggestmore'>{suggestmore}</h5>
+          </div>
+        </div>
+      </div>
       <section className='banner full-width center'>
         <figure>
           <img src={banner} alt='banner' title='banner' />
@@ -80,24 +259,20 @@ const Home = () => {
                     value={searchvalue}
                     onChange={(e) => setSearchvalue(e.target.value)}
                   />
+                  <button type='submit' className='btn submit-btn' id='myBtn'>
+                    submit
+                  </button>
                 </div>
               </form>
-              <h1 className='text-uppercase text-shadow'>
-                Let's support "MAKE IN INDIA"
-              </h1>
-              <form className='float-left banner-form add-company'>
-                <div className='form-group'>
-                  <input
-                    type='search'
-                    className='form-control add'
-                    id='exampleInputSearch'
-                    placeholder='Suggest Company'
-                  />
-                </div>
-                <button className='btn btn-default' type='submit'>
+              <div className='modelbtn'>
+                {" "}
+                <h1 className='text-uppercase text-shadow'>
+                  Let's support "MAKE IN INDIA"
+                </h1>
+                <button className='btn submit-btn' type='submit' id='myBtn2'>
                   Suggest
                 </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -150,6 +325,60 @@ const Home = () => {
             </span>
             <div className='full-width support-india-desc'>
               <h4>Best around the globe</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='full-width support-view'>
+        <div className='owl-carousel owl-theme'>
+          <div className='item'>
+            <div className='full-width center'>
+              <span className='full-width support-india-desc-figure center'>
+                <i className='fas fa-tint'></i>
+              </span>
+              <div className='full-width support-india-desc'>
+                <h4>Bleed for India</h4>
+              </div>
+            </div>
+          </div>
+          <div className='item'>
+            <div className='full-width center'>
+              <span className='full-width support-india-desc-figure center'>
+                <i className='fas fa-mobile'></i>
+              </span>
+              <div className='full-width support-india-desc'>
+                <h4>Bleed for India</h4>
+              </div>
+            </div>
+          </div>
+          <div className='item'>
+            <div className='full-width center'>
+              <span className='full-width support-india-desc-figure center'>
+                <i className='fas fa-heart'></i>
+              </span>
+              <div className='full-width support-india-desc'>
+                <h4>Bleed for India</h4>
+              </div>
+            </div>
+          </div>
+          <div className='item'>
+            <div className='full-width center'>
+              <span className='full-width support-india-desc-figure center'>
+                <i className='far fa-chart-bar'></i>
+              </span>
+              <div className='full-width support-india-desc'>
+                <h4>Bleed for India</h4>
+              </div>
+            </div>
+          </div>
+          <div className='item'>
+            <div className='full-width center'>
+              <span className='full-width support-india-desc-figure center'>
+                <i className='fas fa-globe-africa'></i>
+              </span>
+              <div className='full-width support-india-desc'>
+                <h4>Bleed for India</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -210,9 +439,9 @@ const Home = () => {
                 </div>
               </div>
               <div className='full-width brand-btn center'>
-                <a className='btn btn-default' href='get-logo.html'>
+                <Link className='btn btn-default' to='/getlogo'>
                   Contact us to get your logo here
-                </a>
+                </Link>
               </div>
             </div>
           </div>
